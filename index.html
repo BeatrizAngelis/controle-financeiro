@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <title>Controle financeiro</title>
+    </head>
+    <body>
+        <header>
+            <h1>Controle Fincanceiro</h1>
+        </header>
+        <main>
+            <form id="form">
+                <div class="resume">
+                    <div class="entradas-div">
+                        <p>Entradas: </p>
+                        <span class="incomes"> 0.00</span>
+                    </div>
+                    <div class="saidas-div">
+                        <p>Saídas: </p>
+                        <span class="expenses"> 0.00</span>
+                    </div>
+                    <div class="totalFinal-div">
+                        <p>Total: </p>
+                        <span class="total"> 0.00</span>
+                    </div>
+                </div>
+                    <legend>Adicionar nova entrada ou saída</legend>
+                    <div class="newItem">
+                        <div class="divDesc">
+                            <label for="desc">Descrição</label>
+                            <input type="text" id="desc" name="desc" placeholder="Digite uma descrição">
+                        </div>
+                        <div class="divAmount">
+                            <label for="amount">Valor</label>
+                            <input type="number" id="amount" name="amount" placeholder="Digite um valor">
+                        </div>
+                        <div class="divType">
+                            <label for="type">Tipo</label>
+                            <select id="type" name="type">
+                                <option value="Entrada">Entrada</option>
+                                <option value="Saida">Saida</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="btnAdd">Adicionar</button>
+                        <button type="submit" id="btnLimp">Limpar tudo</button>
+                    </div>   
+                <section class="secTable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Descrição</th>
+                                <th class="columnAmount">Valor</th>
+                                <th class="columnType">Tipo</th>
+                                <th class="columnAction"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </section>
+            </form>
+        </main>
+    </body>
+</html>
