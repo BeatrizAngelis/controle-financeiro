@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: var(--espacamento-externo);
+    padding: var(--espacamento-externo);
+    box-sizing: border-box;
+    font-family: var(--fonte-padrão);
+    outline: none;
+
+    /* Variáveis para cores */
+    --cor-primaria: #2196F3;
+    --cor-secundaria: #2C73D2;
+    --cor-verde: #00C853;
+    --cor-vermelha: #D50000;
+    --cor-azul: #304FFE;
+    --cor-branca: #fff;
+
+    /* Variáveis para espaçamentos */
+    --espacamento-externo: 0; /*margin*/
+    --espacamento-interno: 10px; /*padding*/
+    --espacamento-entre-itens: 20px; /*gap*/
+    --espacamento-entre-colunas: 40px;
+
+    /* Variáveis para fontes */
+    --fonte-padrão: 'poppins', sans-serif;
+    --peso-fonte-titulo: bold;
+    --font-cards: 16px;
+
+    /* Variáveis para tamanhos */
+
+    --altura-header: 110px;
+    --altura-card: 100px;
+    --largura-card: 150px;
+    --largura-tabela: 98%;
+
+    /* Variáveis para bordas */
+    --raio-borda: 10px;
+    --largura-borda: 1px;
+    --cor-borda: #bfbfbfc3;   
+    --estilo-borda: solid;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--tamanho-fonte);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    height: var(--altura-header);
+    top: 0;
+    padding: var(--espacamento-interno);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+h1{
+    font-size: 22px;
+}
+
+.resume {
+    display: flex;
+    padding: var(--espacamento-interno) var(--espacamento-externo);
+    gap: var(--espacamento-entre-colunas);
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap; /*quebrar quando a tela for menor*/
+}
+
+.resume>div {
+    display: flex;
+    flex-direction: column;
+    box-shadow:0px 0px 5px #787474;
+    border-radius: var(--raio-borda);
+    padding: var(--espacamento-interno);
+    width: var(--largura-card);
+    flex-wrap: wrap;
+}
+
+.newItem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--espacamento-entre-itens);
+    flex-wrap: wrap;
+}
+
+.divDesc,
+.divType,
+.divAmount {
+    display: flex;
+    flex-direction: column;
+}
+
+.newItem>button{
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    padding: 0 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 34px;
+    margin-top: 24px;
+}
+
+#btnLimp{
+background-color: #b6281b;
+color: #fff;
+}
+
+input, select {
+    padding: 5px;
+}
+
+input{
+    border: 1px solid #ccc; 
+    border-radius: 6px;
+    
+}
+
+.cards{
+    display:flex;
+    flex-direction:row;
+    gap: 20px;
+  
+}
+
+/* Adiciona cor as divs Entrada, saida e total */
+.entradas-div{
+    background-color: #34e97f;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font:var(--font-cards);
+}
+
+.saidas-div{
+    background-color:  #dd3b3b;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font:var(--font-cards);
+}
+
+.totalFinal-div{
+    background-color: #67a0ff;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font:var(--font-cards);
+}
+
+legend{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.divTable {
+    width: 100%;
+    overflow-x: auto; /* responsivo */
+    justify-content: center;
+}
+
+table {
+    width: 98%;
+    padding: 20px 0;
+    border-radius: 5px;
+    background-color: #F5F5F5
+}
+
+th {
+    text-align: start;
+    border-bottom: inset;
+    padding-bottom:5px;
+}
+
+i {
+    font-size: 25px;
+  }
+  
+  .bxs-chevron-up-circle {
+    color: #00C9A7;
+  }
+  
+  .bxs-chevron-down-circle {
+    color: #D83121;
+  }
+
+    .columnAction{
+    width: 40px;
+    text-align: center;
+}
+
+.columnAction>button{
+    background: transparent;
+    border: none;
+}
+
+.columnAmount {
+    width: 30%;
+}
+
+.columnType{
+    width: 100px;
+    text-align: center;
+}
+
+
+
