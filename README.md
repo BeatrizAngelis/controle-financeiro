@@ -1,12 +1,5 @@
 <h1> Controle Financeiro </h1>
 Um site que te ajuda no controle da suas finanças 
-<h2> Ainda está em desenvolvimento </h2> 
-<br>
-<br>
-<h2> Imagem com os valores inseridos </h2>
-<br>
-<h2> Botão apagar tudo funcionando</h2>
-
 
 ## 🛠 Tecnologias Utilizadas
 
